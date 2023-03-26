@@ -42,3 +42,8 @@ label:hover {
     color: white;  
     top: 0;  
 }
+input:hover {
+    border-radius: 0px; 
+    border-style: solid;
+    background-color: antiquewhite;
+}
