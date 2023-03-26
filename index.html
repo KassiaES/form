@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-devide-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+    <h1>Cadastro</h1>
+</header>
+<body>
+
+    <form name="register">
+        <label for="name">Nome completo</label>
+        <input type="text" id="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="phone">Telefone</label>
+        <input type="text" id="phone">
+
+        <label for="phone">tipo de telefone</label>
+        <fieldset>
+            <label for="homePhoneType">casa</label>
+            <input type="radio" name="phoneType" id="homePhoneType">
+            <label for="workPhoneType">trabalho</label>
+            <input type="radio" name="phoneType" id="workPhoneType">
+            <label for="cellPhoneType">celular</label>
+            <input type="radio" name="phoneType" id="cellPhoneType">
+        </fieldset>
+
+        <label for="address">Endereço</label>
+        <label for="publicPlace">Logradouro</label>
+        <input type="text" id="publicPlace">
+        <label for="city">Cidade</label>
+        <input type="text" id="city">
+        <label for="state">Estado</label>
+        <input type="text" id="state">
+        <label for="postalCode">CEP</label>
+        <input type="text" id="postalCode">
+        <label for="country">País</label>
+        <input type="text" id="country">
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
