@@ -1,39 +1,3 @@
-/** Enunciado
-Crie um formulário que possua os seguintes dados:
-Nome completo
-E-mail
-Telefone
-Tipo de telefone
-casa
-trabalho
-celular
-Endereço
-logradouro
-cidade
-estado
-cep
-país
- * 
-O formulário deve ser preenchido com os valores padrões abaixo, via JavaScript:
- const dados = {
-    nome: "Ada Lovelace",
-    email: "ada@email.com,
-    telefones: [
-        { 
-            numero: "(11) 99123-4567",
-            tipo: "casa"
-        }
-    ],
-    endereco: {
-        logradouro: "Rua das programadoras",
-        cidade: "Vale do silício",
-        estado: "Codefornia",
-        cep: "10100-100",
-        pais: "Programaland"
-    }
-}
-*/
-
 const dados = {
     nome: "Ada Lovelace",
     email: "ada@email.com",
@@ -67,12 +31,12 @@ formRegister.append('country', dados.endereco.pais)
 
 console.log(formRegister)
 
-
 document.getElementById('name').addEventListener('change', () =>  {
     
+    let input = document.querySelector("#name")
 
-    formRegister.append('name', formRegister.getElementsByTagName('name').value)
-    
+    formRegister.append('name', input.value)
+       
     console.log(formRegister)
 
 })
