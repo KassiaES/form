@@ -17,35 +17,36 @@
 
     <form name="register">
         <label for="name">Nome completo</label>
-        <input type="text" id="name">
+        <input type="text" name="name" id="name">
 
         <label for="email">E-mail</label>
-        <input type="email" id="email">
+        <input type="email" name="email" id="email">
 
-        <label for="phone">Telefone</label>
-        <input type="text" id="phone">
+        <label for="phones">Telefone</label>
+        <label for="phoneNumber">Telefone</label>
+        <input type="text" name="phoneNumber" id="phoneNumber">
 
-        <label for="phone">tipo de telefone</label>
+        <label for="phoneType">tipo de telefone</label>
         <fieldset>
             <label for="homePhoneType">casa</label>
-            <input type="radio" name="phoneType" id="homePhoneType">
+            <input type="radio" name="phoneType" id="homePhoneType" value="casa">
             <label for="workPhoneType">trabalho</label>
-            <input type="radio" name="phoneType" id="workPhoneType">
+            <input type="radio" name="phoneType" id="workPhoneType" value="trabalho">
             <label for="cellPhoneType">celular</label>
-            <input type="radio" name="phoneType" id="cellPhoneType">
+            <input type="radio" name="phoneType" id="cellPhoneType" value="celular">
         </fieldset>
 
         <label for="address">Endereço</label>
         <label for="publicPlace">Logradouro</label>
-        <input type="text" id="publicPlace">
+        <input type="text" name="publicPlace" id="publicPlace">
         <label for="city">Cidade</label>
-        <input type="text" id="city">
+        <input type="text" name="city" id="city">
         <label for="state">Estado</label>
-        <input type="text" id="state">
+        <input type="text" name="state" id="state">
         <label for="postalCode">CEP</label>
-        <input type="text" id="postalCode">
+        <input type="text" name="postalCode" id="postalCode">
         <label for="country">País</label>
-        <input type="text" id="country">
+        <input type="text" name="country" id="country">
 
         <button type="submit">Submit</button>
     </form>
